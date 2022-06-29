@@ -1,0 +1,112 @@
+.login{
+    position: relative;
+}
+.wave{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .left{
+    width: 50%;
+    height: 100%;
+}
+.login .container .left .imglogin img{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    animation: up-and-down 5s linear infinite;
+}
+@keyframes up-and-down{
+    0%, 100%{
+        top:0;
+    }
+    50%{
+        top:-50px;
+    }
+}
+.container  .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container .right img{
+    width: 200px;
+    height: 200px;
+}
+.login .container .right input{
+    background: none;
+    border-radius: 25px;
+    width: 220px;
+    height: 20px;
+    /* margin: 10px auto; */
+    text-align: center;
+    padding: 14px 10px;
+    border: 3px solid #82b3ec;
+    outline: none;
+    text-indent: 5px;
+    white-space: normal;
+    transition: 0.25px;
+}
+.login .container .right input:hover{
+    width: 270px;
+    border-color: #fe7062;
+}
+.login .container .right h2{
+    letter-spacing: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+.login .container .right h5{
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: azure;
+
+}
+.login .container .right button{
+    margin-top: 25px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    border: 3px solid #82b3ec;
+    background: none;
+    font-weight: bold;
+    color: white;
+    transition:25px;
+
+}
+.login .container .right button:hover{
+    background-color: #fe7062;
+    transition: 0.3s;
+    
+}
+@media (max-width:750px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .login .container .left{
+        display: none;
+    }
+}
+
+
+
